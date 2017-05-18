@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    font: 16px/1.5 'Lato', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #159;
+    padding: 2px;
+}
+
+a:hover {
+    color: #49a;
+}
