@@ -1,11 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*******
+GENERAL
+*******/
+
+* {
+    box-sizing: border-box;
+}
+
 
 body {
-    font: 16px/1.5 'Lato', sans-serif;
+    background: url(background.jpg) 0% -0.6% / 100% no-repeat;
+    font: 16px/1.5 'Open Sans', sans-serif; 
     color: #333;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1em;
+    padding: 0 1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+h2, h3 {
+    background-color: #ffa;
+}    
+
+h1 {
+    font-size: 3.16em;
+    text-transform: uppercase;
     background-color: #fff;
 }
 
+h2 {
+    font-size: 2.37em;
+}
+
+h3 {
+    font-size: 1.77em;
+}
 
 
 a {
@@ -16,5 +56,110 @@ a {
 }
 
 a:hover {
-    color: #49a;
+    color: #3F99F2;
+    text-decoration: underline;
 }
+
+/*********
+CONTENT
+*********/
+
+.page-wrapper {
+    margin: 0 8%;
+    padding: 0;
+}
+
+#zen-intro {
+    margin: 0 20%;
+}
+
+#zen-intro h1, h2, h3 {
+    text-align: center;
+}
+
+
+h1{
+    margin-top: 2em;
+
+}
+
+h1, h2 {
+    background: none;
+    color: #fff;
+    opacity: 0.9;
+}
+
+section h3 {
+    padding: 0.5em 0;
+    opacity: 1;
+}
+
+#zen-summary {
+    padding: 1em;
+    opacity: 0.85;
+}
+
+#zen-summary p + p {
+    font-style: italic;
+}
+
+#zen-summary, #zen-preamble{
+    background-color: #fff;
+}
+
+#zen-preamble{
+    padding: 0 0 1em;
+    opacity: 0.9;
+}
+
+#zen-supporting {
+    float: left;
+    width: 70%;
+    padding: 0 1em;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+    padding: 0 1em;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#zen-supporting, .sidebar {
+    margin: 3em 0;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    line-height: 2;
+
+}
+
+#design-selection ul li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+a.designer-name{
+    color: #333;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #333;
+    padding: 1em;
+}
+
+footer a {
+    color: #3F99F2;
+    padding: 0 1em;
+
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
