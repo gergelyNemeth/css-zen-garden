@@ -16,6 +16,7 @@ body {
     background-color: #eee;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 p {
@@ -59,7 +60,7 @@ a {
 
 a:hover {
     color: #3F99F2;
-    text-decoration: underline;
+    transition: all 0.2s;
 }
 
 
@@ -156,22 +157,29 @@ h3 {
 }
 
 a.designer-name {
-    color: #333;
     font-weight: normal;
-    text-decoration: underline;
-    ;
 }
 
 footer {
+    clear: both;
     background-color: #333;
-    padding: 1em;
+    padding: 0;
+    position: absolute;
+    bottom: -100em;
+    left: 0;
+    width: 100%;
+    display: flex;
 }
 
 footer a {
     color: #3F99F2;
-    padding: 0 7.5%;
+    text-align: center;
+    flex: auto;
+    padding: 1em;
+    margin: 0;
 }
 
 footer a:hover {
+    background-color: #222;
     color: #ddd;
 }
