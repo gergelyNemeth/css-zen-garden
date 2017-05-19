@@ -10,7 +10,7 @@ GENERAL
 }
 
 body {
-    background: url(background.jpg) 0% -0.05% / 100% no-repeat;
+    background: url(background.jpg) 0% -1.15% / 100% no-repeat;
     font: 16px/1.5 'Open Sans', sans-serif;
     color: #333;
     background-color: #eee;
@@ -136,7 +136,7 @@ h3 {
 
 #zen-supporting,
 .sidebar {
-    margin: 3em 0 0;
+    margin: 2em 0 0;
 }
 
 .sidebar ul {
