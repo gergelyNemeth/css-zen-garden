@@ -21,7 +21,7 @@ body {
 
 p {
     font-size: 1em;
-    padding: 0 1em;
+    padding: 0;
 }
 
 h1,
@@ -113,7 +113,7 @@ h3 {
 #zen-supporting {
     background: #eee;
     float: left;
-    width: 70%;
+    width: 70%; 
     padding: 0 2em;
 }
 
@@ -160,12 +160,24 @@ a.designer-name {
     font-weight: normal;
 }
 
+/* Prevent footer positioned absolutely from covering the content */
+#zen-requirements {
+    padding-bottom: 56px;
+}
+
+/* Fix body content collapse to solve the footer positioning problem */
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 footer {
     clear: both;
     background-color: #333;
     padding: 0;
     position: absolute;
-    bottom: -100em;
+    bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
